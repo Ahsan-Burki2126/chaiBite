@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-amber-900 text-amber-50 pt-16 pb-8 px-4 sm:px-6 lg:px-8">
@@ -15,36 +17,36 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-6 font-display">Quick Links</h3>
             <ul className="space-y-3 text-amber-100 font-sans">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="hover:text-amber-300 transition-colors duration-300"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/about"
                   className="hover:text-amber-300 transition-colors duration-300"
                 >
-                  About Us
-                </a>
+                  Our Story
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/products"
                   className="hover:text-amber-300 transition-colors duration-300"
                 >
-                  Products
-                </a>
+                  Collections
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/contact"
                   className="hover:text-amber-300 transition-colors duration-300"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -53,36 +55,36 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-6 font-display">Products</h3>
             <ul className="space-y-3 text-amber-100 font-sans">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/products"
                   className="hover:text-amber-300 transition-colors duration-300"
                 >
                   Butter Cookies
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/products"
                   className="hover:text-amber-300 transition-colors duration-300"
                 >
                   Digestive Biscuits
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/products"
                   className="hover:text-amber-300 transition-colors duration-300"
                 >
                   Cream Biscuits
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/products"
                   className="hover:text-amber-300 transition-colors duration-300"
                 >
                   Special Editions
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

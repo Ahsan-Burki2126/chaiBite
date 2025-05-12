@@ -251,7 +251,7 @@ const Contact = () => {
           </h2>
           <div className="bg-white p-1 rounded-xl shadow-xl overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.755837393273!2d72.8282143153777!3d19.03398725872633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce3d7e1a1b65%3A0x6b5e5f1a1a0b5e5f!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.712316500169!2d67.11172337520274!3d24.941868477876216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb338bcd01921f5%3A0x5fd98736c5530784!2sInstitute%20of%20Business%20Administration%2C%20Karachi!5e0!3m2!1sen!2s!4v1747053195304!5m2!1sen!2s"
               width="100%"
               height="450"
               style={{ border: 0 }}
