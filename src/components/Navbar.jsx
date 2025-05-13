@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import CartIcon from "./CartIcon"; // Make sure to create this component
+import CartIcon from "./CartIcon";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,11 +31,11 @@ const Navbar = () => {
               to="/"
               className="flex items-center space-x-2 hover:opacity-90 transition-opacity"
             >
-              {/* <img
-                className="h-20 w-20"
-                src={logo}
-                alt="ChaiBite Artisanal Biscuits"
-              /> */}
+              <img
+                className="h-10 w-10 sm:h-12 sm:w-12"
+                src="/logo.svg"
+                alt="ChaiBite Logo"
+              />
               <span className="text-xl text-white font-serif font-bold tracking-wide">
                 ChaiBite
               </span>
@@ -44,68 +44,30 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link
-              to="/"
-              className={`px-2 py-2 text-base font-medium transition-colors relative group ${
-                isActive("/")
-                  ? "text-amber-200"
-                  : "text-white hover:text-amber-200"
-              }`}
-            >
-              Home
-              <span
-                className={`absolute bottom-0 left-0 h-0.5 bg-amber-200 transition-all ${
-                  isActive("/") ? "w-full" : "w-0 group-hover:w-full"
+            {[
+              { path: "/", label: "Home" },
+              { path: "/about", label: "Our Story" },
+              { path: "/products", label: "Collections" },
+              { path: "/contact", label: "Contact" },
+            ].map(({ path, label }) => (
+              <Link
+                key={path}
+                to={path}
+                className={`px-2 py-2 text-base font-medium transition-colors relative group ${
+                  isActive(path)
+                    ? "text-amber-200"
+                    : "text-white hover:text-amber-200"
                 }`}
-              ></span>
-            </Link>
-            <Link
-              to="/about"
-              className={`px-2 py-2 text-base font-medium transition-colors relative group ${
-                isActive("/about")
-                  ? "text-amber-200"
-                  : "text-white hover:text-amber-200"
-              }`}
-            >
-              Our Story
-              <span
-                className={`absolute bottom-0 left-0 h-0.5 bg-amber-200 transition-all ${
-                  isActive("/about") ? "w-full" : "w-0 group-hover:w-full"
-                }`}
-              ></span>
-            </Link>
-            <Link
-              to="/products"
-              className={`px-2 py-2 text-base font-medium transition-colors relative group ${
-                isActive("/products")
-                  ? "text-amber-200"
-                  : "text-white hover:text-amber-200"
-              }`}
-            >
-              Collections
-              <span
-                className={`absolute bottom-0 left-0 h-0.5 bg-amber-200 transition-all ${
-                  isActive("/products") ? "w-full" : "w-0 group-hover:w-full"
-                }`}
-              ></span>
-            </Link>
-            <Link
-              to="/contact"
-              className={`px-2 py-2 text-base font-medium transition-colors relative group ${
-                isActive("/contact")
-                  ? "text-amber-200"
-                  : "text-white hover:text-amber-200"
-              }`}
-            >
-              Contact
-              <span
-                className={`absolute bottom-0 left-0 h-0.5 bg-amber-200 transition-all ${
-                  isActive("/contact") ? "w-full" : "w-0 group-hover:w-full"
-                }`}
-              ></span>
-            </Link>
+              >
+                {label}
+                <span
+                  className={`absolute bottom-0 left-0 h-0.5 bg-amber-200 transition-all ${
+                    isActive(path) ? "w-full" : "w-0 group-hover:w-full"
+                  }`}
+                ></span>
+              </Link>
+            ))}
 
-            {/* Added Cart Icon */}
             <CartIcon />
 
             <Link
@@ -170,61 +132,26 @@ const Navbar = () => {
         }`}
       >
         <div className="px-6 pt-2 pb-4 space-y-1 bg-amber-700">
-          <Link
-            to="/"
-            className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors ${
-              isActive("/")
-                ? "bg-amber-600 text-white"
-                : "text-amber-100 hover:bg-amber-600"
-            }`}
-            onClick={() => setIsOpen(false)}
-          >
-            Home
-          </Link>
-          <Link
-            to="/about"
-            className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors ${
-              isActive("/about")
-                ? "bg-amber-600 text-white"
-                : "text-amber-100 hover:bg-amber-600"
-            }`}
-            onClick={() => setIsOpen(false)}
-          >
-            Our Story
-          </Link>
-          <Link
-            to="/products"
-            className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors ${
-              isActive("/products")
-                ? "bg-amber-600 text-white"
-                : "text-amber-100 hover:bg-amber-600"
-            }`}
-            onClick={() => setIsOpen(false)}
-          >
-            Collections
-          </Link>
-          <Link
-            to="/contact"
-            className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors ${
-              isActive("/contact")
-                ? "bg-amber-600 text-white"
-                : "text-amber-100 hover:bg-amber-600"
-            }`}
-            onClick={() => setIsOpen(false)}
-          >
-            Contact
-          </Link>
-          <Link
-            to="/cart"
-            className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors ${
-              isActive("/cart")
-                ? "bg-amber-600 text-white"
-                : "text-amber-100 hover:bg-amber-600"
-            }`}
-            onClick={() => setIsOpen(false)}
-          >
-            View Cart
-          </Link>
+          {[
+            { path: "/", label: "Home" },
+            { path: "/about", label: "Our Story" },
+            { path: "/products", label: "Collections" },
+            { path: "/contact", label: "Contact" },
+            { path: "/cart", label: "View Cart" },
+          ].map(({ path, label }) => (
+            <Link
+              key={path}
+              to={path}
+              className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors ${
+                isActive(path)
+                  ? "bg-amber-600 text-white"
+                  : "text-amber-100 hover:bg-amber-600"
+              }`}
+              onClick={() => setIsOpen(false)}
+            >
+              {label}
+            </Link>
+          ))}
           <Link
             to="/order"
             className="block px-3 py-2 text-center rounded-lg text-base font-medium bg-white hover:bg-amber-50 text-amber-800 transition-colors"
