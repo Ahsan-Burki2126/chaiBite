@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-// import logo from "../assets/logo.svg";
 import CartIcon from "./CartIcon"; // Make sure to create this component
 
 const Navbar = () => {
