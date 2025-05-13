@@ -33,7 +33,7 @@ const About = () => {
             </h2>
             <div className="space-y-5 text-lg text-amber-900/80 font-sans leading-relaxed">
               <p>
-                Founded in 2010 in the heart of Mumbai, ChaiBite began as a
+                Founded in 224 in the heart of Karachi, ChaiBite began as a
                 humble family endeavor with one simple mission: to craft the
                 perfect biscuit that would elevate every tea experience.
               </p>
@@ -44,7 +44,7 @@ const About = () => {
                 recipes infused with contemporary flair.
               </p>
               <p>
-                Today, while serving discerning customers across India, we
+                Today, while serving discerning customers across Pakistan, we
                 remain true to our artisanal roots - each biscuit still made
                 with the same care and attention as those first batches from our
                 family kitchen.

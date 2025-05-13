@@ -129,9 +129,9 @@ const Contact = () => {
                     <address className="mt-2 text-lg text-gray-600 not-italic">
                       123 Biscuit Lane
                       <br />
-                      Mumbai, Maharashtra 400001
+                      karachi(Sindh)
                       <br />
-                      India
+                      Pakistan
                     </address>
                   </div>
                 </div>
@@ -143,7 +143,7 @@ const Contact = () => {
                   <div className="ml-5">
                     <h3 className="text-xl font-medium text-gray-900">Phone</h3>
                     <p className="mt-2 text-lg text-gray-600">
-                      +91 98765 43210
+                      +92 123 456789
                       <br />
                       <span className="text-sm text-gray-500">
                         (Monday to Friday, 9am to 6pm)
@@ -179,7 +179,7 @@ const Contact = () => {
                       <br />
                       Saturday: 10:00 AM - 4:00 PM
                       <br />
-                      Sunday: Closed
+                      Sunday: 3:00 PM - 11:00 PM
                     </p>
                   </div>
                 </div>

@@ -8,7 +8,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-6 font-display">ChaiBite</h3>
             <p className="text-amber-100 text-base font-sans leading-relaxed">
-              Crafting delicious biscuits since 2010. Perfect companions for
+              Crafting delicious biscuits since 2024. Perfect companions for
               your tea time.
             </p>
           </div>
@@ -93,9 +93,9 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-6 font-display">Contact Us</h3>
             <address className="not-italic text-amber-100 text-base font-sans leading-relaxed">
               <p>123 Biscuit Street</p>
-              <p>Mumbai, Maharashtra 400001</p>
+              <p>Karachi, Pakistan</p>
               <p className="mt-3">Email: info@chaibite.com</p>
-              <p>Phone: +91 98765 43210</p>
+              <p>Phone: +92 123 456789</p>
             </address>
           </div>
         </div>

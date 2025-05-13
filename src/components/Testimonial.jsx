@@ -4,21 +4,21 @@ const Testimonial = () => {
       id: 1,
       quote:
         "ChaiBite biscuits are the perfect companion for my evening tea. The buttery flavor is just divine!",
-      author: "Priya Sharma",
-      role: "Home Baker",
+      author: "Ahsan Burki",
+      role: "Vlogger,Documentary Maker",
     },
     {
       id: 2,
       quote:
         "I've tried many biscuits, but none come close to the crunch and taste of ChaiBite. My family loves them!",
-      author: "Rahul Mehta",
+      author: "Danyal",
       role: "Food Blogger",
     },
     {
       id: 3,
       quote:
         "As a tea shop owner, I can say ChaiBite biscuits have increased my customer satisfaction significantly.",
-      author: "Anjali Patel",
+      author: "Ahmad Hassan",
       role: "Café Owner",
     },
   ];

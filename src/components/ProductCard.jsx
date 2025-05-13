@@ -32,7 +32,7 @@ const ProductCard = ({ product }) => {
         <p className="mt-1 text-sm text-gray-500">{product.description}</p>
         <div className="mt-4 flex items-center justify-between">
           <span className="text-lg font-bold text-amber-600">
-            ₹{product.price}
+            Rs.{product.price}
           </span>
           <button
             onClick={handleAddToCart}

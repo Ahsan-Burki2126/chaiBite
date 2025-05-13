@@ -153,7 +153,7 @@ const Home = () => {
                 Our Heritage
               </h2>
               <p className="mt-3 text-lg text-amber-900/80 leading-relaxed">
-                Since 2010, ChaiBite has been perfecting the art of
+                Since 2024, ChaiBite has been perfecting the art of
                 biscuit-making, blending traditional recipes with modern
                 craftsmanship. Each biscuit tells a story of passion - from our
                 family's kitchen to your tea time moments.
