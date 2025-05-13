@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/logo.svg";
+// import logo from "../assets/logo.svg";
 import CartIcon from "./CartIcon"; // Make sure to create this component
 
 const Navbar = () => {
@@ -32,11 +32,11 @@ const Navbar = () => {
               to="/"
               className="flex items-center space-x-2 hover:opacity-90 transition-opacity"
             >
-              <img
+              {/* <img
                 className="h-20 w-20"
                 src={logo}
                 alt="ChaiBite Artisanal Biscuits"
-              />
+              /> */}
               <span className="text-xl text-white font-serif font-bold tracking-wide">
                 ChaiBite
               </span>
