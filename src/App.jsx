@@ -3,10 +3,10 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 
-import About from "./pages/About";
-import Products from "./pages/Products";
-import Contact from "./pages/Contact";
-import Cart from "./pages/Cart";
+import About from "./Pages/About";
+import Products from "./Pages/Products";
+import Contact from "./Pages/Contact";
+import Cart from "./Pages/Cart";
 
 function App() {
   return (
