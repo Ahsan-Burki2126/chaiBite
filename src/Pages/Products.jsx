@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 
 // Import all images
-import butterDelight from "../assets/images/butter-delight.jpg";
-import chocoChip from "../assets/images/choco-chip.jpg";
-import elaichiMagic from "../assets/images/elaichi-magic.jpg";
-import digestivePlus from "../assets/images/digestive-plus.jpg";
-import coconutCrunch from "../assets/images/coconut-crunch.jpg";
-import honeyOats from "../assets/images/honey-oats.jpg";
-import masalaChai from "../assets/images/masala-chai.jpg";
-import darkFantasy from "../assets/images/dark-fantasy.jpg";
+import butterDelight from "../assets/butter-delight.jpg";
+import chocoChip from "../assets/choco-chip.jpg";
+import elaichiMagic from "../assets/elaichi-magic.jpg";
+import digestivePlus from "../assets/digestive-plus.jpg";
+import coconutCrunch from "../assets/coconut-crunch.jpg";
+import honeyOats from "../assets/honey-oats.jpg";
+import masalaChai from "../assets/masala-chai.jpg";
+import darkFantasy from "../assets/dark-fantasy.jpg";
 
 const Products = () => {
   // All products data

@@ -5,12 +5,12 @@ import Testimonial from "../components/Testimonial";
 import Newsletter from "../components/NewsLetter";
 
 // Import all images
-import butterDelight from "../assets/images/butter-delight.jpg";
-import chocoChip from "../assets/images/choco-chip.jpg";
-import elaichiMagic from "../assets/images/elaichi-magic.jpg";
-import digestivePlus from "../assets/images/digestive-plus.jpg";
-import aboutBiscuits from "../assets/images/about-bakery.jpg";
-import heroBiscuits from "../assets/images/hero-biscuits.jpg";
+import butterDelight from "../assets/butter-delight.jpg";
+import chocoChip from "../assets/choco-chip.jpg";
+import elaichiMagic from "../assets/elaichi-magic.jpg";
+import digestivePlus from "../assets/digestive-plus.jpg";
+import aboutBiscuits from "../assets/about-bakery.jpg";
+import heroBiscuits from "../assets/hero.jpg";
 
 const Home = () => {
   const featuredProducts = [
