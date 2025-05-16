@@ -33,7 +33,7 @@ const About = () => {
             </h2>
             <div className="space-y-5 text-lg text-amber-900/80 font-sans leading-relaxed">
               <p>
-                Founded in 224 in the heart of Karachi, ChaiBite began as a
+                Founded in 2025 in the heart of Karachi, ChaiBite began as a
                 humble family endeavor with one simple mission: to craft the
                 perfect biscuit that would elevate every tea experience.
               </p>

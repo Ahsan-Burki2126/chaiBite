@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"; // Add this import
-import Hero from "../components/Hero";
+// import Hero from "../components/Hero";
 import ProductCard from "../components/ProductCard";
 import Testimonial from "../components/Testimonial";
 import Newsletter from "../components/NewsLetter";
@@ -90,7 +90,7 @@ const Home = () => {
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
             className="h-72 w-full object-cover sm:h-80 md:h-96 lg:w-full lg:h-full"
-            src={heroBiscuits}
+            src={aboutBiscuits}
             alt="Artisanal ChaiBite biscuits"
           />
         </div>
@@ -153,7 +153,7 @@ const Home = () => {
                 Our Heritage
               </h2>
               <p className="mt-3 text-lg text-amber-900/80 leading-relaxed">
-                Since 2024, ChaiBite has been perfecting the art of
+                Since 20205, ChaiBite has been perfecting the art of
                 biscuit-making, blending traditional recipes with modern
                 craftsmanship. Each biscuit tells a story of passion - from our
                 family's kitchen to your tea time moments.

@@ -25,20 +25,33 @@ const ProductCard = ({ product }) => {
       <div className="p-4">
         <div className="flex items-center justify-between">
           <h3 className="text-lg font-medium text-gray-900">{product.name}</h3>
-          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-800">
-            {product.category}
+          <span
+            className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+              product.available
+                ? "bg-amber-100 text-amber-800"
+                : "bg-gray-200 text-gray-600"
+            }`}
+          >
+            {product.available ? product.category : "Coming Soon"}
           </span>
         </div>
         <p className="mt-1 text-sm text-gray-500">{product.description}</p>
         <div className="mt-4 flex items-center justify-between">
-          <span className="text-lg font-bold text-amber-600">
-            Rs.{product.price}
-          </span>
+          {product.available && (
+            <span className="text-lg font-bold text-amber-600">
+              Rs.{product.price}
+            </span>
+          )}
           <button
             onClick={handleAddToCart}
-            className="px-3 py-1 bg-amber-600 text-white text-xs font-medium rounded hover:bg-amber-700 focus:outline-none focus:bg-amber-700 transition"
+            disabled={!product.available}
+            className={`px-3 py-1 text-white text-xs font-medium rounded focus:outline-none transition ${
+              product.available
+                ? "bg-amber-600 hover:bg-amber-700"
+                : "bg-gray-300 cursor-not-allowed"
+            }`}
           >
-            Add to Cart
+            {product.available ? "Add to Cart" : "Coming Soon"}
           </button>
         </div>
       </div>

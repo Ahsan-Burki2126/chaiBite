@@ -8,7 +8,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-6 font-display">ChaiBite</h3>
             <p className="text-amber-100 text-base font-sans leading-relaxed">
-              Crafting delicious biscuits since 2024. Perfect companions for
+              Crafting delicious biscuits since 2025. Perfect companions for
               your tea time.
             </p>
           </div>
@@ -59,7 +59,7 @@ const Footer = () => {
                   to="/products"
                   className="hover:text-amber-300 transition-colors duration-300"
                 >
-                  Butter Cookies
+                  Healthy Biscuits
                 </Link>
               </li>
               <li>
@@ -67,7 +67,7 @@ const Footer = () => {
                   to="/products"
                   className="hover:text-amber-300 transition-colors duration-300"
                 >
-                  Digestive Biscuits
+                  Premium Biscuits
                 </Link>
               </li>
               <li>
@@ -75,15 +75,7 @@ const Footer = () => {
                   to="/products"
                   className="hover:text-amber-300 transition-colors duration-300"
                 >
-                  Cream Biscuits
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/products"
-                  className="hover:text-amber-300 transition-colors duration-300"
-                >
-                  Special Editions
+                  Chocolate Biscuits
                 </Link>
               </li>
             </ul>
