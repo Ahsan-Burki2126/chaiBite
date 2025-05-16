@@ -5,46 +5,37 @@ import Testimonial from "../components/Testimonial";
 import Newsletter from "../components/NewsLetter";
 
 // Import all images
-import butterDelight from "../assets/butter-delight.jpg";
 import chocoChip from "../assets/choco-chip.jpg";
-import elaichiMagic from "../assets/elaichi-magic.jpg";
-import digestivePlus from "../assets/digestive-plus.jpg";
 import aboutBiscuits from "../assets/about-bakery.jpg";
-import heroBiscuits from "../assets/hero.jpg";
+import coconutCrunch from "../assets/coconut-crunch.jpg";
+import honeyOats from "../assets/honey-oats.jpg";
 
 const Home = () => {
+  // Import only used images for available products (already imported chocoChip, etc.)
   const featuredProducts = [
     {
       id: 1,
-      name: "Butter Delight",
-      category: "Classic",
-      description: "Rich buttery flavor with a perfect golden crunch",
+      name: "Oat Cookies",
+      category: "Available",
+      description: "Nutritious and crunchy oat cookies with a hint of honey.",
       price: 120,
-      image: butterDelight,
+      image: honeyOats, // Make sure you import this at the top: import honeyOats from "../assets/honey-oats.jpg";
     },
     {
       id: 2,
-      name: "Choco Chip",
-      category: "Chocolate",
-      description: "Generous chocolate chips in every bite",
+      name: "Chocolate Chip Cookies",
+      category: "Available",
+      description: "Loaded with delicious chocolate chips in every bite.",
       price: 150,
       image: chocoChip,
     },
     {
       id: 3,
-      name: "Elaichi Magic",
-      category: "Spiced",
-      description: "Aromatic cardamom infused biscuits",
-      price: 135,
-      image: elaichiMagic,
-    },
-    {
-      id: 4,
-      name: "Digestive Plus",
-      category: "Healthy",
-      description: "Nutritious whole wheat with natural fibers",
-      price: 110,
-      image: digestivePlus,
+      name: "Coconut Cookies",
+      category: "Available",
+      description: "Infused with crunchy coconut flakes for a tropical taste.",
+      price: 130,
+      image: coconutCrunch, // Also import coconutCrunch from "../assets/coconut-crunch.jpg";
     },
   ];
 
@@ -96,7 +87,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Featured Products */}
+      {/* Featured Section */}
       <section id="products" className="py-16 px-6 sm:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -108,7 +99,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
             {featuredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}

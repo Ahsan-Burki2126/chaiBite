@@ -2,102 +2,67 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 
-// Import all images
-import butterDelight from "../assets/butter-delight.jpg";
+// Import only used images for available products
 import chocoChip from "../assets/choco-chip.jpg";
-import elaichiMagic from "../assets/elaichi-magic.jpg";
-import digestivePlus from "../assets/digestive-plus.jpg";
 import coconutCrunch from "../assets/coconut-crunch.jpg";
 import honeyOats from "../assets/honey-oats.jpg";
-import masalaChai from "../assets/masala-chai.jpg";
-import darkFantasy from "../assets/dark-fantasy.jpg";
 
 const Products = () => {
-  // All products data
+  // Product data
   const allProducts = [
     {
       id: 1,
-      name: "Butter Delight",
-      category: "Classic",
-      description: "Rich buttery flavor with a perfect golden crunch",
+      name: "Oat Cookies",
+      category: "Available",
+      description: "Nutritious and crunchy oat cookies with a hint of honey.",
       price: 120,
-      rating: 4.8,
-      image: butterDelight,
-    },
-    {
-      id: 2,
-      name: "Choco Chip",
-      category: "Chocolate",
-      description: "Generous Belgian chocolate chips in every bite",
-      price: 150,
-      rating: 4.9,
-      image: chocoChip,
-    },
-    {
-      id: 3,
-      name: "Elaichi Magic",
-      category: "Spiced",
-      description: "Premium cardamom infused aromatic biscuits",
-      price: 135,
-      rating: 4.7,
-      image: elaichiMagic,
-    },
-    {
-      id: 4,
-      name: "Digestive Plus",
-      category: "Healthy",
-      description: "Whole wheat biscuits with natural fibers",
-      price: 110,
-      rating: 4.5,
-      image: digestivePlus,
-    },
-    {
-      id: 5,
-      name: "Coconut Crunch",
-      category: "Exotic",
-      description: "Toasted Sri Lankan coconut flakes",
-      price: 140,
-      rating: 4.6,
-      image: coconutCrunch,
-    },
-    {
-      id: 6,
-      name: "Honey Oats",
-      category: "Healthy",
-      description: "Raw Himalayan honey with organic oats",
-      price: 125,
       rating: 4.7,
       image: honeyOats,
     },
     {
-      id: 7,
-      name: "Masala Chai",
-      category: "Spiced",
-      description: "Authentic masala chai spice blend",
-      price: 130,
+      id: 2,
+      name: "Chocolate Chip Cookies",
+      category: "Available",
+      description: "Loaded with delicious chocolate chips in every bite.",
+      price: 150,
       rating: 4.8,
-      image: masalaChai,
+      image: chocoChip,
     },
     {
-      id: 8,
-      name: "Dark Fantasy",
-      category: "Premium",
-      description: "70% dark chocolate coated luxury biscuits",
-      price: 180,
-      rating: 4.9,
-      image: darkFantasy,
+      id: 3,
+      name: "Coconut Cookies",
+      category: "Available",
+      description: "Infused with crunchy coconut flakes for a tropical taste.",
+      price: 130,
+      rating: 4.6,
+      image: coconutCrunch,
+    },
+    {
+      id: 4,
+      name: "Strawberry Chocolate Cookies",
+      category: "Coming Soon",
+      description: "Strawberry and chocolate paired in a dreamy combination.",
+      price: 0,
+      rating: 0,
+      image: "images/strawberry-chocolate-cookies.jpg",
+    },
+    {
+      id: 5,
+      name: "Blueberry Muffin Cookies",
+      category: "Coming Soon",
+      description: "Soft muffin-style cookies bursting with blueberry flavor.",
+      price: 0,
+      rating: 0,
+      image: "images/blueberry-muffin-cookies.jpg",
     },
   ];
 
-  // State for filters
   const [category, setCategory] = useState("All");
   const [sortBy, setSortBy] = useState("default");
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Get unique categories
   const categories = ["All", ...new Set(allProducts.map((p) => p.category))];
 
-  // Filter and sort products
   const filteredProducts = allProducts
     .filter((product) => {
       const matchesCategory =
@@ -133,7 +98,7 @@ const Products = () => {
         {/* Search and Filters */}
         <div className="mb-12 bg-white p-6 rounded-xl shadow-lg">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Search Bar */}
+            {/* Search */}
             <div>
               <label
                 htmlFor="search"
@@ -196,7 +161,7 @@ const Products = () => {
           </div>
         </div>
 
-        {/* Products Grid */}
+        {/* Products */}
         {filteredProducts.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {filteredProducts.map((product) => (
@@ -237,7 +202,7 @@ const Products = () => {
           </div>
         )}
 
-        {/* Featured Collection Link */}
+        {/* Featured Link */}
         <div className="mt-16 text-center">
           <Link
             to="/"
